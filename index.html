@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="menu.js" defer></script>
+
+    <title>Vitor Leonardo | Engenheiro Mecânico</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="images/logo-vitor.png" alt="Logo Vitor Leonardo" />
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#atuacoes">Atuação</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#atuacoes">Atuação</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="topo-do-site" data-aos="fade-down">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>
+                            MUITO PRAZER,<br>
+                            <span>SOU VITOR LEONARDO.</span>
+                        </h1>
+                        <p>
+                            Sou Engenheiro Mecânico com experiência em PCM, Engenharia de Confiabilidade,<br> PMOC, NR12 e Projetos Mecânicos.<br> Atuo no desenvolvimento de soluções para manutenção,<br> segurança e desempenho industrial e de frotas.
+                        </p>
+                        <div class="btn-contato">
+                            <a href="#contato">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="especialidades" class="especiliadades" data-aos="fade-down">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+
+                <div class="portfolio-container">
+                    <div class="filtro-lateral">
+                        <div class="elementor-widget-container" style="margin-bottom: 30px;">
+                            <div class="e-filter" role="search">
+                                <button class="e-filter-item" data-filter="engenharia-inspecao">Inspeção e Certificação</button>
+                                <button class="e-filter-item" data-filter="engenharia-manutencao">Manutenção e Confiabilidade de Ativos</button>
+                                <button class="e-filter-item" data-filter="engenharia-projeto">Projetos e Sistemas Mecânicos</button>
+                                <button class="e-filter-item" data-filter="__all" aria-pressed="true">Todos</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="especialidades-box engenharia-inspecao">
+                            <img src="images/elevador.png" alt="Inspeção de Elevadores" class="img-especialidade">
+                            <h3>Inspeção e Laudo para Elevadores</h3>
+                            <button class="saiba-mais-btn">Saiba Mais</button>
+                            <p class="descricao">Emissão de laudos técnicos conforme ABNT e NR12, garantindo segurança e funcionamento adequado.</p>
+                        </div>
+
+                        <div class="especialidades-box engenharia-inspecao">
+                            <img src="images/inspecao-veicular.png" alt="Inspeção Veicular" class="img-especialidade">
+                            <h3>Inspeção Veicular</h3>
+                            <button class="saiba-mais-btn">Saiba Mais</button>
+                            <p class="descricao">Verificação técnica de veículos para conformidade, segurança e desempenho.</p>
+                        </div>
+
+                        <!-- Continue com os demais cards seguindo o mesmo modelo -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="atuacoes" class="portfolio" data-aos="fade-down">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-3.jpg" alt="AAC 01" />
+                                <div class="overlay">
+                                    <h3>Manutenção de Frotas</h3>
+                                    <p>Controle, telemetria e abastecimento</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-2.jpg" alt="AAC 02" />
+                                <div class="overlay">
+                                    <h3>Engenharia de Confiabilidade</h3>
+                                    <p>MTBF, R(t), Curva da Banheira</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-5.png" alt="AAC 03" />
+                                <div class="overlay">
+                                    <h3>Projetos Técnicos</h3>
+                                    <p>NR12, PMOC, dimensionamentos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-5.jpg" alt="AAC 04" />
+                                <div class="overlay">
+                                    <h3>Treinamentos Técnicos</h3>
+                                    <p>Capacitação de operadores e técnicos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-4.jpg" alt="AAC 05" />
+                                <div class="overlay">
+                                    <h3>Consultoria Mecânica</h3>
+                                    <p>Apoio estratégico para empresas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-2.jpg" alt="AAC 07" />
+                                <div class="overlay">
+                                    <h3>Gestão de Indicadores</h3>
+                                    <p>KPIs de manutenção e frota</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-container">
+                                <img src="images/portfolio-6.jpg" alt="AAC 07" />
+                                <div class="overlay">
+                                    <h3>Manutenção de Sistemas de Bombeamento</h3>
+                                    <p>Atuação em Manutenção de Bombas, Válvulas e Sistemas Hidrossanitários</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                spaceBetween: 6,
+                loop: true,
+                speed: 5000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                },
+                freeMode: true,
+                freeModeMomentum: false,
+                grabCursor: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2
+                    },
+                    480: {
+                        slidesPerView: 1
+                    }
+                }
+            });
+        </script>
+
+        <section id="contato" class="formulario" data-aos="fade-down">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+                <form>
+                    <input type="text" placeholder="Seu nome completo:" required />
+                    <input type="email" placeholder="Seu e-mail:" required />
+                    <input type="text" placeholder="Seu celular:" />
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer data-aos="fade-down">
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo-vitor.png" alt="Logotipo" />
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/vitorleonardocl/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:vitorleonardocl@gmail.com">vitorleonardocl@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.e-filter-item');
+        const especialidades = document.querySelectorAll('.especialidades-box');
+
+        // Adiciona a classe 'active' ao botão "Todos" por padrão ao carregar a página
+        document.querySelector('.e-filter-item[data-filter="__all"]').setAttribute('aria-pressed', 'true');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Atualiza botão ativo
+                filterButtons.forEach(b => b.setAttribute('aria-pressed', 'false'));
+                button.setAttribute('aria-pressed', 'true');
+
+                const filtro = button.dataset.filter;
+
+                especialidades.forEach(item => {
+                    if (filtro === '__all' || item.classList.contains(filtro)) {
+                        item.style.display = 'flex'; // mantém o display como 'flex'
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Executa o filtro inicial para exibir todos os cards ao carregar
+        document.addEventListener('DOMContentLoaded', () => {
+            const allButton = document.querySelector('.e-filter-item[data-filter="__all"]');
+            if (allButton) {
+                allButton.click(); // Simula um clique no botão "Todos"
+            }
+
+            // Adiciona o comportamento de clique para mostrar/ocultar descrição
+            document.querySelectorAll('.especialidades-box').forEach(card => {
+                card.addEventListener('click', function() {
+                    // Fecha todos os outros cards
+                    document.querySelectorAll('.especialidades-box').forEach(c => {
+                        if (c !== this) c.classList.remove('ativo');
+                    });
+                    // Alterna o card clicado
+                    this.classList.toggle('ativo');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
