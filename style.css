@@ -54,6 +54,7 @@ h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 h2.titulo span {
@@ -86,7 +87,7 @@ header>.interface {
 }
 
 header a {
-    color: #5c5c5c;
+    color: #f0f0f0;
     text-decoration: none;
     display: inline-block;
     transition: 0.2s;
@@ -109,7 +110,7 @@ header nav.menu-desktop ul li {
 }
 
 .logo img {
-    width: 200px;
+    width: 140px;
 }
 
 
@@ -120,7 +121,7 @@ section {
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 
@@ -342,7 +343,7 @@ section.especiliadades {
     border: 1px solid #333;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    max-height: 280px;
+    max-height: 330px;
     cursor: pointer;
 }
 
@@ -359,8 +360,8 @@ section.especiliadades {
 }
 
 .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
+    font-size: 16px;
+    margin: 0;
     color: #74acc4;
 }
 
@@ -631,6 +632,7 @@ footer .line-footer p a {
     h2.titulo {
         font-size: 34px;
         line-height: 30px;
+        margin-bottom: 24px;
     }
     .menu-desktop,
     .btn-contato {
@@ -737,7 +739,7 @@ footer .line-footer p a {
         margin-bottom: 0px;
     }
     .logo img {
-        width: 400px;
+        width: 100px;
         max-width: 150%;
         display: block;
         margin: 0 auto;
@@ -764,7 +766,7 @@ footer .line-footer p a {
         padding: 10px 15px;
     }
     .especialidades-box h3 {
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
     .especialidades-box p {
         font-size: 0.9em;
