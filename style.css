@@ -792,6 +792,12 @@ footer .line-footer p a {
     transition: background-color 0.3s ease;
 }
 
+@media (max-width: 480px) {
+    .saiba-mais-btn {
+        display: none;
+    }
+}
+
 .saiba-mais-btn:hover {
     background-color: #74acc4;
 }
