@@ -110,7 +110,7 @@ header nav.menu-desktop ul li {
 }
 
 .logo img {
-    width: 140px;
+    width: 170px;
 }
 
 
@@ -121,7 +121,7 @@ section {
 }
 
 main {
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
 
@@ -739,7 +739,7 @@ footer .line-footer p a {
         margin-bottom: 0px;
     }
     .logo img {
-        width: 100px;
+        width: 200px;
         max-width: 150%;
         display: block;
         margin: 0 auto;
@@ -750,7 +750,7 @@ footer .line-footer p a {
         margin-bottom: 20px;
     }
     .logo-footer img {
-        width: 180px;
+        width: 280px;
         max-width: 90%;
         display: block;
         margin: 0 auto;
