@@ -71,8 +71,13 @@ form .btn-enviar input:hover {
 /* ESTILO DO CABEÇALHO */
 
 header {
-    padding: 6px 4%;
-    background-color: #000000;
+    padding: 7px 4%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* branco com 90% de opacidade */
+    backdrop-filter: blur(4px);
+    /* opcional: efeito de desfoque do fundo */
+    -webkit-backdrop-filter: blur(4px);
+    /* suporte para Safari */
     box-shadow: inset 0 -6px 12px #021c4280;
     position: fixed;
     top: 0;
