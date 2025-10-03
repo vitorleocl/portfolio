@@ -30,9 +30,15 @@ body {
 }
 
 #inicio {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1)), url('images/background.png');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 15%), /* lado esquerdo */
+    linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 15%), /* lado direito */
+    linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%), /* parte inferior */
+    url('images/background.png');
+    /* imagem */
+    background-size: 65%;
+    /* reduz tamanho da imagem no desktop */
+    background-position: 85% center;
+    /* desloca p/ direita */
     background-repeat: no-repeat;
     color: white;
     padding: 300px 0;
@@ -73,11 +79,8 @@ form .btn-enviar input:hover {
 header {
     padding: 7px 4%;
     background-color: rgba(0, 0, 0, 0.8);
-    /* branco com 90% de opacidade */
     backdrop-filter: blur(4px);
-    /* opcional: efeito de desfoque do fundo */
     -webkit-backdrop-filter: blur(4px);
-    /* suporte para Safari */
     box-shadow: inset 0 -6px 12px #021c4280;
     position: fixed;
     top: 0;
@@ -354,7 +357,6 @@ section.especiliadades {
 
 .especialidades-box.ativo {
     max-height: 800px;
-    /* altura suficiente para exibir descrição */
     box-shadow: 0 0 25px #74acc4;
     transform: scale(1.05);
 }
@@ -385,7 +387,6 @@ section.especiliadades {
 .especialidades-box.ativo .descricao {
     opacity: 1;
     max-height: 300px;
-    /* ajustar se precisar mais espaço */
     margin-top: 15px;
 }
 
@@ -621,18 +622,43 @@ footer .line-footer p a {
 
 /* RESPONSIVO */
 
+
+/* ===== MOBILE / TABLET (até 1020px) ===== */
+
 @media screen and (max-width: 1020px) {
     .flex {
         flex-direction: column;
     }
+    /* topo: empilha imagem acima do texto */
     .topo-do-site .flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 40px;
+    }
+    .topo-do-site .img-topo-site {
+        order: -1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .topo-do-site .img-topo-site img {
+        display: block;
+        width: 80%;
+        max-width: 420px;
+        height: auto;
+        border-radius: 20px;
+        animation: none;
     }
     .txt-topo-site {
         padding-left: 0;
         text-align: center;
+        max-width: 90%;
+        order: 1;
+        margin-top: 200px;
+        /* aumentei de 0px para 40px */
     }
     h2.titulo {
         font-size: 34px;
@@ -649,9 +675,16 @@ footer .line-footer p a {
     .topo-do-site h1 {
         font-size: 30px;
     }
-    .topo-do-site .img-topo-site img {
-        width: 280px;
-        border-radius: 20px;
+    /* Ajuste do background no mobile */
+    #inicio {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 15%), linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 15%), linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%), url('images/background.png');
+        /* mantém a imagem no mobile */
+        background-size: cover;
+        /* cobre toda largura */
+        background-position: center top;
+        /* centraliza */
+        background-repeat: no-repeat;
+        padding: 200px 0 5px;
     }
     section.especiliadades {
         padding: 40px 8%;
